@@ -9,9 +9,9 @@ We provide an array of tools and scripts to analyze top down videos featuring si
 
 ## Markers
 
-We used a total of 48 markers to train the model. These include 12 mouse body parts, 15 cage features, and 21 different visual stimuli. Markers may be updated in future versions to include additional stimuli.
-[Figure with labeled markers]
-[Table with markers and the definitions]
+We used a total of 48 [markers](https://github.com/Creton-Lab/Home-Cage-Analysis-of-Mouse-Behavior/tree/main/Resources/Mouse_Homecage_Landmarks.pdf) to train the model. These include 12 mouse body parts, 15 cage features, and 21 different visual stimuli. Markers may be updated in future versions to include additional stimuli.
+![Figure with labeled markers](Resources/MouseLandmarks_1.png?raw=True "Mouse Landmarks")
+
 
 
 ## Video Cropping
