@@ -1,0 +1,129 @@
+    # Project definitions (do not edit)
+Task: TwoMiceTrials
+scorer: Thais
+date: Nov20
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /gpfs/home/tdelros1/TwoMiceTrials-Thais-2022-11-20
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /gpfs/data/rcretonp/experiment_data/tdelros1/103122_Cropped_ROI_0.mp4:
+    crop: 0, 294, 0, 222
+  /gpfs/data/rcretonp/experiment_data/tdelros1/103122_Cropped_ROI_1.mp4:
+    crop: 0, 308, 0, 224
+  /gpfs/data/rcretonp/experiment_data/tdelros1/110322_Cropped_ROI_0.mp4:
+    crop: 0, 290, 0, 220
+  /gpfs/data/rcretonp/experiment_data/tdelros1/110322_Cropped_ROI_1.mp4:
+    crop: 0, 300, 0, 220
+  /gpfs/data/rcretonp/experiment_data/tdelros1/110722_Cropped_ROI_0.mp4:
+    crop: 0, 304, 0, 216
+  /gpfs/data/rcretonp/experiment_data/tdelros1/110722_Cropped_ROI_1.mp4:
+    crop: 0, 278, 0, 218
+  /gpfs/data/rcretonp/experiment_data/tdelros1/111022_Cropped_ROI_0.mp4:
+    crop: 0, 286, 0, 210
+  /gpfs/data/rcretonp/experiment_data/tdelros1/111022_Cropped_ROI_1.mp4:
+    crop: 0, 302, 0, 204
+  /gpfs/data/rcretonp/experiment_data/tdelros1/111622_Cropped_ROI_0.mp4:
+    crop: 0, 292, 0, 220
+  /gpfs/data/rcretonp/experiment_data/tdelros1/111622_Cropped_ROI_1.mp4:
+    crop: 0, 304, 0, 222
+bodyparts:
+- nose
+- rightEar
+- leftEar
+- head
+- neck
+- center
+- hip
+- tailBase
+- RfrontPaw
+- LfrontPaw
+- RrearPaw
+- LrearPaw
+- foodPlate
+- foodPellet1
+- foodPellet2
+- frontTopHouse
+- frontBottomHouse
+- backTopHouse
+- backBottomHouse
+- centerHouse
+- centerBackHouse
+- upMothTop
+- upMothBottom
+- upMothWingRight
+- upMothWingLeft
+- downMothTop
+- downMothBottom
+- downMothWingRight
+- downMothWingLeft
+- upWormHead
+- upWormCenter
+- upWormTail
+- downWormHead
+- downWormCenter
+- downWormTail
+- blackCricket
+- blackSwoop
+- blackLoom
+- yellowCricket
+- yellowSwoop
+- greyLoom
+- flash
+- cornerTopL
+- cornerTopR
+- cornerBottomL
+- cornerBottomR
+- windowTop
+- windowBottom
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 40
+
+    # Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
